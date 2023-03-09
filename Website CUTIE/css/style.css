@@ -11,7 +11,6 @@
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 html{
@@ -35,6 +34,9 @@ section {
 .heading span{
     color: var(--Cyan);
     background: transparent;
+}
+.heading:hover{
+    background: var(--Blue);
 }
 .btn{
     display: inline-block;
@@ -112,6 +114,7 @@ header .fa-bars{
     font-size: 6rem;
     background: transparent;
     color: #fff;
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 
 }
 .home .content span{
@@ -127,9 +130,10 @@ header .fa-bars{
     color: #fff9f9;
     padding: 1rem 0;
     line-height: 1.5;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
 }
 .about{
-    background: #4ADEDE;
+    background: #fff;
 }
 .about .row{
     display: flex;
@@ -145,7 +149,7 @@ header .fa-bars{
 }
 .about .row .video-container video{
     width: 100%;
-    border: 1.5rem solid #fff;
+    border: 1.5rem solid var(--Purple);
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     height: 100%;
@@ -155,7 +159,7 @@ header .fa-bars{
     position: absolute;
     top: 50%; transform: translateY(-50%);
     font-size: 3rem;
-    background: #fff;
+    background: var(--Purple);
     width: 100%;
     padding: 1rem 2rem;
     text-align: center;
@@ -165,12 +169,12 @@ header .fa-bars{
     flex: 1 1 40rem;
 }
 .about .row .content h3{
-    font-size: 3rem;
-    color: var(--Purple);
+    font-size: 4rem;
+    color: var(--Blue);
 }
 .about .row .content p{
     font-size: 1.5rem;
-    color: #fff;
+    color: #000;
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
@@ -264,7 +268,7 @@ header .fa-bars{
 }
 .products .box-container .box .image .icons a:hover{
     background: #fff;
-    color: var(--lavender);
+    color: var(--Purple);
 }
 .products .box-container .box .content{
     padding: 2rem;
@@ -272,7 +276,7 @@ header .fa-bars{
 }
 .products .box-container .box .content h3{
     font-size: 2.5rem;
-    color: #333;
+    color: var(--Blue);
 }
 .products .box-container .box .content .price{
     font-size: 2.5rem;
@@ -414,7 +418,7 @@ header .fa-bars{
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: #eee;
+        background: #fff;
         border-top: .1rem solid rgba(0, 0, 0, .1);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -424,9 +428,11 @@ header .fa-bars{
     header .navbar a{
         margin: 1.5rem;
         padding: 1.5rem;
-        background: #fff;
+        background: var(--Blue);
         border: .1rem solid rgba(0, 0, 0, .1);
         display: block;
+        border-radius: 50px;
+        text-align: center;
     }
     .home .content h3{
         font-size: 5rem;
