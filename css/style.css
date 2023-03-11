@@ -1,8 +1,9 @@
 :root{ 
-    --Purple:#797EF6;
-    --Cyan: #4ADEDE;
-    --LightBlue: #1AA7EC;
-    --Blue: #1E2F97;
+    --Darkblue:#012362;
+    --Gray: #505050;
+    --LightBlue: #0078D3;
+    --Orange: #F0A740;
+    --DarkGray: #3F3F3F;
 
 }
 *   {
@@ -25,20 +26,20 @@ section {
 .heading{
     text-align: center;
     font-size: 4rem;
-    color: #fff;
+    color: var(--Orange);
     padding: 1rem;
     margin: 2rem 0;
-    background: var(--Purple);
+    background: var(--Darkblue);
     border-radius: 15px;
     text-transform: capitalize;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 .heading span{
-    color: var(--Cyan);
+    color: #fff;
     background: transparent;
 }
 .heading:hover{
-    background: var(--Blue);
+    background: var(--LightBlue);
 }
 ul  {
     display: flex;
@@ -62,7 +63,7 @@ li  {
 header  {
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: var(--Blue);
+    background: var(--Darkblue);
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -83,7 +84,7 @@ header .navbar a{
     
 }
 header .navbar a:hover{
-    color: var(--Cyan);
+    color: var(--Orange);
 }
 header .icons a{
     font-size: 2.5rem;
@@ -92,7 +93,7 @@ header .icons a{
 
 }
 header .icons a:hover{
-    color: var(--Cyan);
+    color: var(--Orange);
 }
 header #toggler{
     display: none;
@@ -189,7 +190,7 @@ header .fa-bars{
     line-height: 1.5;
 }
 .overview{
-    background: var(--LightBlue);
+    background: var(--DarkGray);
 }
 .overview .row{
     display: flex;
@@ -226,11 +227,11 @@ header .fa-bars{
 }
 .overview .row .content h3{
     font-size: 4rem;
-    color: #000;
+    color: #fff;
 }
 .overview .row .content p{
     font-size: 1.5rem;
-    color: #000;
+    color: #fff;
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
@@ -397,44 +398,75 @@ header .fa-bars{
     font-size: 1.5rem;
     color: #999;
 }
-.contact .row{
-    display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 1.5rem;
-    align-items: center;
-}
-.contact .row form{
-    flex:1 1 40rem;
-    padding:2rem 2.5rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border:.1rem solid rgba(0,0,0,.1);
-    background: #fff;
-    border-radius: .5rem;
-}
-.contact .row .image{
-    flex:1 1 40rem;
-}
-.contact .row .image img{
-   width: 100%;
-}
-.contact .row form .box{
-    padding: 1rem;
-    font-size: 1.7rem;
-    color:#333;
-    text-transform: none;
-    border: .1rem solid rgba(0,0,0,.1);
-    border-radius: .5rem;
-    margin: .7rem 0;
+form{
+    background: var(--LightBlue);
+    max-width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  }
+  
+  form h3{
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  input{
+    background-color: #fff;  
+    color: #fff;
     width: 100%;
-}
-.contact .row form .box:focus{
-    border-color: var(--lavender);
-}
-.contact .row form textarea{
-    height: 15rem;
+    padding: 10px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid var(--Darkblue);
+    border-radius: 5px;
     resize: none;
-}
-
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  textarea  {
+    background-color: #fff;  
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid var(--Darkblue);
+    border-radius: 5px;
+    resize: none;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button{
+    background-color: var(--Orange);  
+    align-self: center;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  form  {
+    align-items: center;
+  }
+  
+  button:hover{
+    background: var(--LightBlue);
+  }
+  .status   {
+    overflow: hidden;
+  }
 
 
 
@@ -484,7 +516,7 @@ header .fa-bars{
     header .navbar a{
         margin: 1.5rem;
         padding: 1.5rem;
-        background: var(--Blue);
+        background: var(--Darkblue);
         border: .1rem solid rgba(0, 0, 0, .1);
         display: block;
         border-radius: 50px;
