@@ -47,18 +47,31 @@ ul  {
 li  {
     list-style: none;
 }
+button{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--Orange);
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+button:hover{
+    background: var(--LightBlue);
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: var(--Purple);
+    background: var(--Darkblue);
     color: #fff;
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 .btn:hover{
-    background: var(--Blue);
+    background: var(--LightBlue);
 }
 header  {
     position: fixed;
@@ -398,75 +411,44 @@ header .fa-bars{
     font-size: 1.5rem;
     color: #999;
 }
-form{
-    background: var(--LightBlue);
-    max-width: 100%;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-  }
-  
-  form h3{
-    color: #fff;
-    font-size: 1.6em;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  input{
-    background-color: #fff;  
-    color: #fff;
-    width: 100%;
-    padding: 10px;
-    font-weight: 400;
-    outline: none;
-    border: 1px solid var(--Darkblue);
-    border-radius: 5px;
-    resize: none;
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  textarea  {
-    background-color: #fff;  
-    color: #fff;
-    width: 100%;
-    padding: 10px;
-    font-weight: 400;
-    outline: none;
-    border: 1px solid var(--Darkblue);
-    border-radius: 5px;
-    resize: none;
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  button{
-    background-color: var(--Orange);  
-    align-self: center;
-    border-radius: 5px;
-    color: #fff;
-    display: inline-block;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    width: 50%;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  form  {
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
     align-items: center;
-  }
-  
-  button:hover{
-    background: var(--LightBlue);
-  }
-  .status   {
-    overflow: hidden;
-  }
+}
+.contact .row form{
+    flex:1 1 40rem;
+    padding:2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+.contact .row .image{
+    flex:1 1 40rem;
+}
+.contact .row .image img{
+   width: 100%;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+.contact .row form .box:focus{
+    border-color: var(--lavender);
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
 
 
 
