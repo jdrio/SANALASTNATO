@@ -335,42 +335,25 @@
 <!-- review section ends  -->
 <!-- contact section starts  -->
 
-<section id="contact" class="contact">
-    <div class="container">
+<section class="contact" id="contact">
 
-      <div class="section-title">
-        <h1 class="heading"> Contact <span>US</span></h1>
-      </div>
+    <h1 class="heading"> <span> contact </span> us </h1>
 
+    <div class="row">
 
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="text" placeholder="name" name="name" class="box">
+            <input type="email" placeholder="email" name="email" class="box">
+            <input type="text" placeholder="number" name="text" class="box">
+            <textarea name="message" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Send</button>
+        </form>
 
-
-
-      <form action="https://formspree.io/f/xleklbgb" method="POST" role="form" class="php-email-form mt-4" id="my-form">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-        </div>
-        <button type="submit" id="my-form-button">Send Message</button>
-      </form>
-      <div id="status"></div>
+        
 
     </div>
-    
-  </section><!-- End Contact Section -->
+
+</section>
 
 <!-- contact section ends -->
 
