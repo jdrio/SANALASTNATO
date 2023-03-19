@@ -71,7 +71,7 @@ button:hover{
     font-size: 1.7rem;
 }
 .btn:hover{
-    background: var(--LightBlue);
+    background: var(--Orange);
 }
 header  {
     position: fixed;
@@ -143,17 +143,19 @@ header .fa-bars{
 .home .content span{
     background: transparent;
     font-size: 3.5rem;
-    color: #fff9f9;
+    color: #fff;
     padding: 1rem 0;
     line-height: 1.5;
+    text-shadow: 0 0.5rem 1rem rgba(88, 88, 88, 0.651);
+
 }
 .home .content p{
     background: transparent;
     font-size: 1.5rem;
-    color: #fff9f9;
+    color: #fff;
     padding: 1rem 0;
     line-height: 1.5;
-    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    text-shadow: 0 0.5rem 1rem rgba(88, 88, 88, 0.651);
 }
 .about{
     background: var(--Cyan);
@@ -172,7 +174,7 @@ header .fa-bars{
 }
 .about .row .video-container video{
     width: 100%;
-    border: 1.5rem solid #fff;
+    border: 1rem solid var(--Darkblue);
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     height: 100%;
@@ -202,8 +204,63 @@ header .fa-bars{
     padding-top: 1rem;
     line-height: 1.5;
 }
+.Employment{
+    background: var(--Gray);
+}
+.Employment h2{
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    background: #0078D3;
+    border-radius: 10rem;
+}
+
+.Employment .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.Employment .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+.Employment .row .video-container video{
+    width: 100%;
+    border: 1rem solid var(--Darkblue);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 100%;
+    object-fit: cover;
+}
+.Employment .row .video-container h3{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.Employment .row .content{
+    flex: 1 1 40rem;
+}
+.Employment .row .content h3{
+    font-size: 4rem;
+    color: #000;
+}
+.Employment .row .content p{
+    font-size: 1.5rem;
+    color: #000;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
 .overview{
-    background: var(--DarkGray);
+    background: var(--Orange);
 }
 .overview .row{
     display: flex;
@@ -219,7 +276,7 @@ header .fa-bars{
 }
 .overview .row .video-container video{
     width: 100%;
-    border: 1.5rem solid #fff;
+    border: 1rem solid var(--Darkblue);
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     height: 100%;
@@ -229,7 +286,7 @@ header .fa-bars{
     position: absolute;
     top: 50%; transform: translateY(-50%);
     font-size: 3rem;
-    background: #fff;
+    background: #000;
     width: 100%;
     padding: 1rem 2rem;
     text-align: center;
@@ -240,11 +297,11 @@ header .fa-bars{
 }
 .overview .row .content h3{
     font-size: 4rem;
-    color: #fff;
+    color: #000;
 }
 .overview .row .content p{
     font-size: 1.5rem;
-    color: #fff;
+    color: #000;
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
@@ -278,83 +335,86 @@ header .fa-bars{
     color: #555;
     font-size: 1.3rem;
 }
-.products .box-container{
+.Jobs .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-.products .box-container .box{
+.Jobs .box-container .box{
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-    border-radius: .5rem;
-    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: 2rem;
+    border: .5rem solid var(--Darkblue);
     position: relative;
 
 }
-.products .box-container .box .discount{
+.Jobs .box-container .box .discount{
     position: absolute;
     top: 1rem; left: 1rem; 
     padding: .7rem 1rem;
     font-size: 2rem;
-    color: var(--lavender);
+    color: var(--Darkblue);
     background: rgba(255, 51, 153, .05);
     z-index: 1;
     border-radius: .5rem;
 }
-.products .box-container .box .image{
+.Jobs .box-container .box .image{
     position: relative;
     text-align: center;
     padding-top: 2rem;
     overflow: hidden;
 }
-.products .box-container .box .image img{
+.Jobs .box-container .box .image img{
     height: 25rem;
 }
-.products .box-container .box:hover .image img{
+.Jobs .box-container .box:hover .image img{
     transform: scale(1.1);
 }
-.products .box-container .box .image .icons{
+.Jobs .box-container .box .image .icons{
     position: absolute;
     bottom: -7rem; left: 0; right: 0;
     display: flex;
 }
-.products .box-container .box:hover .image .icons{
+.Jobs .box-container .box:hover .image .icons{
     bottom: 0;
 }
 
-.products .box-container .box .image .icons a{
+.Jobs .box-container .box .image .icons a{
     height: 5rem;
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background: var(--lavender);
+    background: var(--LightBlue);
+    text-transform: capitalize;
     color: #fff;
 
 }
-.products .box-container .box .image .icons .cart-btn{
+.Jobs .box-container .box .image .icons .cart-btn{
     border-left: .1rem solid #fff7;
     border-right: .1rem solid #fff7;
     width: 100%;
 }
-.products .box-container .box .image .icons a:hover{
-    background: #fff;
-    color: var(--Purple);
+.Jobs .box-container .box .image .icons a:hover{
+    background: var(--Orange);
+    color: #fff;
 }
-.products .box-container .box .content{
+.Jobs .box-container .box .content{
     padding: 2rem;
     text-align: center;
 }
-.products .box-container .box .content h3{
+.Jobs .box-container .box .content h3{
     font-size: 2.5rem;
-    color: var(--Blue);
+    color: var(--LightBlue);
+    text-transform: capitalize;
+    
 }
-.products .box-container .box .content .price{
+.Jobs .box-container .box .content .price{
     font-size: 2.5rem;
-    color: var(--lavender);
+    color: var(--Darkblue);
     font-weight: bolder;
     padding-top: 1rem;
 }
-.products .box-container .box .content .price span{
+.Jobs .box-container .box .content .price span{
     font-size: 1rem;
     color: #999;
     font-weight: lighter;
