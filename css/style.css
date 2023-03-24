@@ -203,9 +203,10 @@ header .fa-bars{
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
+    
 }
 .Employment{
-    background: var(--Gray);
+    background: aliceblue;
 }
 .Employment h2{
     color: #fff;
