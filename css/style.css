@@ -34,7 +34,7 @@ section {
     text-transform: capitalize;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
-.heading span{
+.heading span{ 
     color: #fff;
     background: transparent;
 }
@@ -99,6 +99,10 @@ header .navbar a{
 header .navbar a:hover{
     color: var(--Orange);
 }
+header .navbar a.active {
+    background-color: #f00;
+    color: #000;
+  }
 header .icons a{
     font-size: 2.5rem;
     color: #fff;
@@ -510,9 +514,38 @@ header .fa-bars{
     resize: none;
 }
 
+.how .content ul{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: left;
+    list-style-type: none;
+    flex-direction: column;
+}
+.how .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--Darkblue);
+    text-align: center;
+}
+.how .content ul strong{
+    margin-right: 10px;
 
-
-
+}
+.how .content li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    display: block;
+}
+.how .content ul i{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #00fcef;
+    line-height: 0;
+}
+.how .content p{
+    padding-left: 50px;
+}
 
 
 
