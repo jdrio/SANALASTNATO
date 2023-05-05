@@ -535,7 +535,6 @@ header .fa-bars{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    display: block;
 }
 .how .content ul i{
     font-size: 16px;
