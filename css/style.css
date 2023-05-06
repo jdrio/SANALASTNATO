@@ -515,6 +515,7 @@ header .fa-bars{
 }
 .how{
     background: var(--Orange);
+    height: 100%;
 
 }
 .how .content ul{
@@ -529,6 +530,7 @@ header .fa-bars{
     font-size: 4rem;
     color: #fff;
     text-align: center;
+    padding-bottom: 20px;
 }
 .how .content ul strong{
     margin-right: 10px;
@@ -539,7 +541,7 @@ header .fa-bars{
     display: block;
     align-items: center;
     font-size: 2.5rem;
-
+    color: var(--LightBlue);
 }
 .how .content ul i{
     font-size: 2.5rem;
@@ -547,10 +549,24 @@ header .fa-bars{
     color: var(--Darkblue);
     line-height: 0;
 }
-.how .content p{
-    padding-left: 12rem;
+.how .content p a{
+    padding-left: 13rem;
+    color: var(--Darkblue);
 }
-
+.how .content p a:hover{
+    color: var(--Orange);
+}
+.how .content p i:hover{
+    color: var(--Orange);
+}
+.how .content ul{
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 50px;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+}
 
 
 
